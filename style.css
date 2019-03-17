@@ -1,0 +1,304 @@
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900'); */
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Croissant+One');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #242229;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #FAF6E6;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+body h1 {
+  color: #FF3051;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  width: 100%;
+  z-index: 2;
+}
+
+button.indicator {
+  width: 100px;
+  margin: 18px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  transition: 0.3s ease-out;
+}
+
+button.indicator[data-state=active] {
+  box-shadow: 0px 0px 2px rgb(255, 48, 82);
+}
+
+button.indicator:hover {
+  text-shadow: 0 2px 2px rgb(255, 48, 82);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+section.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 150px 30px 0 30px;
+  background-color: #242229;
+}
+
+.left,
+.right {
+  cursor: pointer;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 34px;
+  user-select: none;
+  outline: none;
+  border-style: none;
+  z-index: 2;
+  transition: 0.5s ease;
+}
+
+.right {
+  right: 0;
+  left: auto;
+}
+
+.left:hover,
+.right:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 1px 1px 2px black;
+}
+
+/* SECTION 1 - ABOUT */
+
+.header {
+  margin: auto;
+  text-align: center;
+  color: rgb(250, 246, 230);
+
+}
+
+.header i {
+  font-size: 90px;
+  color: #FF3051;
+  text-shadow: 1px 2px 2px black;
+}
+
+.header h1 {
+  font-family: 'Croissant One', cursive;
+  margin-top: -25px;
+  font-size: 60px;
+  font-weight: 900;
+  background-color: rgb(250, 246, 230);
+  color: transparent;
+  text-shadow: 0px 0px 0.2px rgb(250, 246, 230);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.header h4 {
+  font-family: 'Cookie', cursive;
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: -10px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.text {
+  position: relative;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+  padding: 0 30px;
+  text-align: justify;
+  line-height: 35px;
+}
+
+.one,
+.three {
+  flex-basis: 100%;
+  padding: 0 15%;
+  margin-bottom: 50px;
+}
+
+.two {
+  text-align: center;
+  flex-basis: 50%;
+  color: #FF3051;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 0 15% 0 3%;
+}
+
+.text h1 {
+  margin: 50px 0;
+}
+
+.four {
+  flex-basis: 55%;
+  padding-left: 15%;
+}
+
+
+.photo1 {
+  width: 50%;
+}
+
+.photo2 {
+  flex-grow: 1;
+  padding-left: 50px;
+}
+
+/* SECTION 2 PROJECTS */
+
+section.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.projects div {
+  margin: 50px 15% 80px 15%;
+  flex-basis: 100%;
+}
+
+div.title-s2,
+div.text-project {
+  text-align: center;
+  min-width: 400px;
+  line-height: 35px;
+}
+
+div.text-project h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+div.g1 h4.t1 {
+  color: #FF3051;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 770px;
+  margin-right: 5px;
+  z-index: 2;
+}
+
+div.g1 {
+  min-width: 400px;
+  height: 400px;
+  background-image: url("https://www.mockupworld.co/wp-content/uploads/edd/2018/10/free-white-bottle-lid-mockup-psd-768x576.jpg");
+  text-align: right;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-out;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+div.gallery img {
+  align-self: center;
+  width: 30%;
+  height: 20vw;
+  flex-grow: 1;
+  margin: 3px;
+  border-radius: 2px;
+}
+
+div.g3 img {
+  width: 20%;
+  height: 14vw;
+}
+
+div.g4 img {
+  width: 45%;
+}
+
+div.t5 {
+  text-align: justify;
+}
+
+
+/* section 3 contact  */
+
+.contact-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.map {
+  flex-basis: 50%;
+  padding: 10%;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 0 5%;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 40px;
+  z-index: 2;
+  border-radius: 2px;
+  background-color: rgba(250, 246, 230, 0.4);
+  text-shadow: 1px 1.5px 2px rgb(0, 0, 0);
+}
+
+.contact-info h3 {
+  color: rgb(76, 79, 253);
+  margin: 20px 0;
+}
+
+.bottom-pic {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+}
